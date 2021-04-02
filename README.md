@@ -4,10 +4,11 @@ Minimalistic custom dark and white themes keeping the classic approach of the st
 ## Features
 
 - modern design with pleasing to the eyes
-- beautiful minimalistic tags with simple animations 
+- beautiful minimalistic tags with simple animations
+- internal and external links are more distinguishable 
 - increase image size on hover
 - custom code blocks style
-- and more
+- and many more...
 
 ![Dark Theme](harmony-demo-black.png)
 ![Dark Theme](harmony-demo-white.png)
