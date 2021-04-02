@@ -5,8 +5,14 @@ Minimalistic custom dark and white themes keeping the classic approach of the st
 
 - modern design with pleasing to the eyes
 - beautiful minimalistic tags with simple animations 
-- increase image size on hover s
+- increase image size on hover
+- custom code blocks style
 - and more
 
 ![Dark Theme](harmony-demo-black.png)
 ![Dark Theme](harmony-demo-white.png)
+
+## Installation
+
+1. Download `custom.css` file
+2. Find file `custom.css` in your Logseq repo (in `logseq` folder) and replace with downloaded file
