@@ -7,3 +7,6 @@ Minimalistic custom dark and white themes keeping the classic approach of the st
 - beautiful minimalistic tags with simple animations 
 - increase image size on hover s
 - and more
+
+![Dark Theme](harmony-demo-black.png)
+![Dark Theme](harmony-demo-white.png)
