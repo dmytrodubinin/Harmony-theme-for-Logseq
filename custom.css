@@ -1,0 +1,408 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Fira+Code:wght@300;400;500;600;700&display=swap');
+
+:root {
+  --ls-font-family: 'Roboto', sans-serif;
+}
+
+.dark-theme,
+html[data-theme='dark'] {
+  --ls-primary-background-color: #21232b;
+  --ls-secondary-background-color: #282a33;
+  --ls-tertiary-background-color: rgba(255, 255, 255, 0.05);
+  --ls-quaternary-background-color: rgba(255, 255, 255, 0.04);
+  --ls-table-tr-even-background-color: rgba(255, 255, 255, 0.05);
+  --ls-active-primary-color: #8ec2c2;
+  --ls-active-secondary-color: #eeffff;
+  --ls-block-properties-background-color: var(--ls-primary-background-color);
+  --ls-block-ref-link-text-color: var(--ls-link-text-color);
+  --ls-search-background-color: var(--ls-secondary-background-color);
+  --ls-border-color: var(--ls-primary-text-color);
+  --ls-secondary-border-color: var(--ls-primary-text-color);
+  --ls-guideline-color: rgba(255, 255, 255, 0.3);
+  --ls-menu-hover-color: var(--ls-secondary-background-color);
+  --ls-primary-text-color: rgba(255, 255, 255, 0.87);
+  --ls-secondary-text-color: rgba(255, 255, 255, 0.6);
+  --ls-title-text-color: var(--ls-primary-text-color);
+  --ls-link-text-color: #b2ccdf;
+  --ls-link-text-hover-color: #fff;
+  --ls-link-ref-text-color: var(--ls-link-text-color);
+  --ls-link-ref-text-hover-color: var(--ls-link-text-hover-color);
+  --ls-tag-text-color: var(--ls-link-text-color);
+  --ls-tag-text-hover-color: var(--ls-link-text-hover-color);
+  --ls-slide-background-color: var(--ls-primary-background-color);
+  --ls-block-bullet-border-color: rgba(255, 255, 255, 0.25);
+  --ls-block-bullet-color: var(--ls-link-text-color);
+  --ls-block-highlight-color: rgba(255, 255, 255, 0.1);
+  --ls-selection-background-color: rgba(255, 255, 255, 0.1);
+  --ls-page-checkbox-color: rgba(255, 255, 255, 0.1);
+  --ls-page-checkbox-border-color: var(--ls-primary-text-color);
+  --ls-page-blockquote-color: var(--ls-primary-text-color);
+  --ls-page-blockquote-bg-color: var(--ls-secondary-background-color);
+  --ls-page-blockquote-border-color: var(--ls-border-color);
+  --ls-page-inline-code-color: var(--ls-primary-text-color);
+  --ls-page-inline-code-bg-color: rgba(255, 255, 255, 0.2);
+  --ls-page-title-size: 2rem;
+  --ls-scrollbar-foreground-color: rgba(255, 255, 255, 0.075);
+  --ls-scrollbar-background-color: var(--ls-primary-background-color);
+  --ls-scrollbar-thumb-hover-color: rgba(255, 255, 255, 0.2);
+  --ls-head-text-color: var(--ls-link-text-color);
+  --ls-icon-color: var(--ls-link-text-color);
+  --ls-search-icon-color: var(--ls-link-text-color);
+  --ls-a-chosen-bg: var(--ls-secondary-background-color);
+  --ls-right-sidebar-code-bg-color: var(--ls-page-inline-code-bg-color);
+  --color-level-1: var(--ls-secondary-background-color);
+  --color-level-2: var(--ls-tertiary-background-color);
+  --color-level-3: var(--ls-quaternary-background-color);
+}
+
+.white-theme,
+html[data-theme='light'] {
+  --ls-primary-background-color: #fafafa;
+  --ls-secondary-background-color: #ededed;
+  --ls-page-title-size: 2rem;
+  --ls-title-text-color: var(--ls-primary-text-color);
+  --ls-block-properties-background-color: var(--ls-primary-background-color);
+  --ls-block-ref-link-text-color: var(--ls-link-text-color);
+  --ls-search-background-color: var(--ls-secondary-background-color);
+  --ls-page-inline-code-color: var(--ls-primary-text-color);
+  --ls-page-inline-code-bg-color: rgba(0, 0, 0, 0.2);
+  --ls-page-title-size: 2rem;
+  --ls-scrollbar-foreground-color: rgba(0, 0, 0, 0.2);
+  --ls-scrollbar-background-color: var(--ls-primary-background-color);
+  --ls-scrollbar-thumb-hover-color: rgba(0, 0, 0, 0.3);
+  --ls-head-text-color: var(--ls-link-text-color);
+  --ls-icon-color: var(--ls-link-text-color);
+  --ls-search-icon-color: var(--ls-link-text-color);
+  --ls-a-chosen-bg: var(--ls-secondary-background-color);
+
+}
+
+/* === Custom colors in buttons, hints etc ===  */
+
+/* submit button in calendar etc */
+.dark-theme .bg-indigo-600 {
+  background-color: var(--ls-link-text-color);
+  color: var(--ls-primary-background-color);
+}
+
+.dark-theme .hover\:bg-indigo-700:hover,
+.hover\:bg-indigo-500:hover {
+  background-color: var(--ls-primary-text-color);
+}
+
+/* pre */
+.hljs {
+  background: transparent;
+}
+
+/* hints */
+.dark-theme .Tooltip__label {
+  width: 11ch;
+  border: 1px solid var(--ls-primary-text-color);
+  background: var(--ls-secondary-background-color);
+}
+
+.dark-theme .Tooltip__label::after {
+  border-bottom-color: var(--ls-primary-text-color);
+}
+
+/* bold font */
+.dark-theme b,
+.dark-theme strong {
+  color: #fff;
+}
+
+/* brackets in links */
+.page-reference .bracket {
+  opacity: 0.5;
+  color: var(--ls-link-text-color);
+}
+
+/* highlights */
+mark {
+  background: rgba(255, 255, 255, 0.8);
+  color: var(--ls-primary-background-color);
+  padding: 2px 4px;
+  border-radius: 3px;
+  font-size: 14px;
+}
+.white-theme mark {
+  background: rgba(0, 0, 0, 0.5);
+}
+
+/* checkbox */
+.form-checkbox {
+  background-color: var(--ls-primary-background-color);
+}
+.dark-theme .form-checkbox {
+  border: 1px solid rgba(255, 255, 255, 0.5);
+}
+.white-theme .form-checkbox {
+  border: 1px solid rgba(0, 0, 0, 0.5);
+}
+
+.dark-theme .form-checkbox:checked {
+  border-color: rgba(255, 255, 255, 0.5);
+  background-color: var(--ls-primary-background-color);
+}
+
+.white-theme .form-checkbox:checked {
+  border-color: rgba(0, 0, 0, 0.5);
+  background-color: var(--ls-link-text-color);
+}
+
+.dark-theme .form-checkbox:focus {
+  border-color: rgba(255, 255, 255, 0.5);
+}
+
+.dark-theme .form-checkbox:checked:focus {
+  background-color: inherit;
+  border-color: rgba(255, 255, 255, 0.5);
+}
+
+.form-checkbox:hover {
+  transform: scale(1.2);
+}
+
+/* === Marker for Task Status === */
+.marker-switch {
+  font-size: 0.75rem;
+  margin-right: 6px;
+  margin-left: 2px;
+  border-radius: 0;
+  font-weight: 500;
+  display: inline-block;
+  text-align: center;
+  width: 17px;
+  height: 16px;
+  opacity: 1;
+  padding: 0.1rem 0.25rem 0.1rem 0.25rem;
+  border: 1px solid;
+  line-height: 1;
+  cursor: pointer;
+}
+.dark-theme .marker-switch {
+  color: rgba(255, 255, 255, 0.5);
+}
+.white-theme .marker-switch {
+  color: rgba(0, 0, 0, 0.5);
+}
+
+/* === Zoom Image on hover === */
+.block-content img {
+  max-width: 100%;
+  cursor: default;
+}
+
+.resize.image-resize {
+  transition: transform 0.25s ease;
+}
+.resize.image-resize:hover {
+  transition-delay: 1s;
+  transform: scale(2);
+  z-index: 2;
+}
+
+/* === Filters === */
+.filters button:focus {
+  outline: none;
+}
+
+/* === External Links === */
+a.external-link {
+  border-bottom: 0px;
+}
+a.external-link:after {
+  background-color: var(--ls-link-text-color);
+  bottom: -2px;
+  content: '';
+  display: inline-block;
+  height: 14px;
+  left: -1px;
+  margin: 0 1px 0 5px;
+  mask-image: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABwAAAAcCAYAAAByDd+UAAAACXBIWXMAABYlAAAWJQFJUiTwAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAGDSURBVHgBtZaNcYMwDIUfGzgbqBuUDcwkaTdoJ4AN0gmaTNJu0GyQdILSCUjRIa6yMT+x4d29O7CNPmMLmQzryYhZ39hIDChbX1vflPn+2JqwoigA8t20fsEKogCslrZ6C6iG/UhAo/qLwBhCpCzc2T+OjNu1PquxB0TqpIK8e33k3Rdw3zJKnyqIVe2VtF1UW4b/PW0QuawaaDyYH5iBVyQCSQA2ALvJPRRQT8QgUdUEjPWs+r6QqHIGlsPdv/1UMIuuNJ3Fh4UwI8+WcAvAZQxEcJNCm2ZgOYZVpodRCPaAYblqxP0MK4wv42sA9oGJzPRLEQez8oDBfILwhHl1eAuOcL/RgZ48mF+uqhnY3dI1b781zHgBl8AKuSZEiOCe1KF2P/V1UiQBa6+Ps7OBu4w2FQi4308RmJDWCePH02K9qSCcQLuRcTncZbaIFKH7HPRe8ptmYp4A/0bUCO93lDhgg2U/RqPlag3o4toYK0JXmvoM1fW0QuIhmmEezvoVJ+sPourrpWEel2gAAAAASUVORK5CYII=');
+  -webkit-mask-box-image: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABwAAAAcCAYAAAByDd+UAAAACXBIWXMAABYlAAAWJQFJUiTwAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAGDSURBVHgBtZaNcYMwDIUfGzgbqBuUDcwkaTdoJ4AN0gmaTNJu0GyQdILSCUjRIa6yMT+x4d29O7CNPmMLmQzryYhZ39hIDChbX1vflPn+2JqwoigA8t20fsEKogCslrZ6C6iG/UhAo/qLwBhCpCzc2T+OjNu1PquxB0TqpIK8e33k3Rdw3zJKnyqIVe2VtF1UW4b/PW0QuawaaDyYH5iBVyQCSQA2ALvJPRRQT8QgUdUEjPWs+r6QqHIGlsPdv/1UMIuuNJ3Fh4UwI8+WcAvAZQxEcJNCm2ZgOYZVpodRCPaAYblqxP0MK4wv42sA9oGJzPRLEQez8oDBfILwhHl1eAuOcL/RgZ48mF+uqhnY3dI1b781zHgBl8AKuSZEiOCe1KF2P/V1UiQBa6+Ps7OBu4w2FQi4308RmJDWCePH02K9qSCcQLuRcTncZbaIFKH7HPRe8ptmYp4A/0bUCO93lDhgg2U/RqPlag3o4toYK0JXmvoM1fW0QuIhmmEezvoVJ+sPourrpWEel2gAAAAASUVORK5CYII=');
+  mask-position: center;
+  -webkit-mask-box-position: center;
+  mask-repeat: no-repeat;
+  -webkit-mask-box-repeat: no-repeat;
+  mask-size: 14px 14px;
+  -webkit-mask-box-size: 14px 14px;
+  object-fit: cover;
+  position: relative;
+  transition: 0.3s;
+  width: 14px;
+}
+
+a.external-link:hover:after {
+  background-color: var(--ls-link-text-hover-color);
+}
+
+/* === Tags ===  */
+a.tag[data-ref] {
+  color: var(--ls-primary-background-color);
+  background: var(--ls-link-text-color);
+  border-radius: 0.5rem 0rem;
+  font-size: 0.75rem;
+  font-weight: bold;
+  letter-spacing: 0.05em;
+  line-height: 0.75rem;
+  padding: 0.2rem 0.3rem;
+  transition: 0.3s;
+  white-space: nowrap;
+}
+
+a.tag[data-ref]:hover {
+  opacity: 1;
+  background-color: var(--ls-link-text-hover-color);
+  border-radius: 0rem 0.5rem;
+}
+
+/* === Inline code === */
+:not(pre) > code {
+  padding: 2px 5px !important;
+}
+
+/* === CodeMirror === */
+.CodeMirror {
+  font-family: 'Fira Code', monospace;
+  line-height: 1.2;
+  background: var(--ls-secondary-background-color);
+}
+
+.CodeMirror-hscrollbar {
+  cursor: default;
+}
+
+.cm-s-default.CodeMirror,
+.cm-s-default .CodeMirror-gutters {
+  background-color: transparent;
+  color: white !important;
+  border: none;
+}
+.white-theme .cm-s-default.CodeMirror,
+.white-theme .cm-s-default .CodeMirror-gutters {
+  color: black !important;
+  border: none;
+}
+
+.extensions__code-lang {
+  background: var(--ls-secondary-background-color);
+}
+
+.cm-s-default.CodeMirror,
+.white-theme .cm-s-default.CodeMirror {
+  border: 5px solid var(--ls-secondary-background-color);
+}
+
+
+.cm-s-default .CodeMirror-gutters {
+  color: var(--ls-secondary-background-color);
+}
+.cm-s-default .CodeMirror-cursor {
+  border-left: solid thin white;
+}
+
+.white-theme .cm-s-default .CodeMirror-cursor {
+  border-left: solid thin black;
+}
+
+.cm-s-default .CodeMirror-selected {
+  background: rgba(255, 255, 255, 0.1);
+}
+.white-theme .cm-s-default .CodeMirror-selected {
+  background: rgba(0, 0, 0, 0.1);
+}
+
+.cm-s-default .CodeMirror-line {
+  box-shadow: none;
+}
+
+.cm-s-default .CodeMirror-line::selection,
+.cm-s-default .CodeMirror-line > span::selection,
+.cm-s-default .CodeMirror-line > span > span::selection {
+  background: rgba(255, 255, 255, 0.1);
+}
+.cm-s-default .CodeMirror-line::-moz-selection,
+.cm-s-default .CodeMirror-line > span::-moz-selection,
+.cm-s-default .CodeMirror-line > span > span::-moz-selection {
+  background: rgba(255, 255, 255, 0.1);
+}
+.cm-s-default span.cm-comment {
+  color: #777;
+}
+.cm-s-default span.cm-string,
+.cm-s-default span.cm-string-2 {
+  color: #e6c963;
+}
+.white-theme .cm-s-default span.cm-string,
+.white-theme .cm-s-default span.cm-string-2 {
+  color: orange;
+}
+
+.cm-s-default span.cm-number {
+  color: #978ade;
+}
+.cm-s-default span.cm-variable {
+  color: #82aaff;
+}
+.cm-s-default span.cm-variable-2 {
+  color: rgba(255, 255, 255, 0.7);
+}
+.white-theme .cm-s-default span.cm-variable-2 {
+  color: rgba(0, 0, 0, 0.7);
+}
+.cm-s-default span.cm-def {
+  color: #fff;
+}
+.white-theme .cm-s-default span.cm-def {
+  color: black;
+}
+.cm-s-default span.cm-operator {
+  color: #f15f60;
+}
+.cm-s-default span.cm-keyword {
+  color: #f15f60;
+}
+.cm-s-default span.cm-atom {
+  color: #978ade;
+}
+.cm-s-default span.cm-meta {
+  color: white;
+}
+.white-theme .cm-s-default span.cm-meta {
+  color: black;
+}
+.cm-s-default span.cm-tag {
+  color: #f07178;
+}
+.cm-s-default span.cm-attribute {
+  color: #c792ea;
+}
+.cm-s-default span.cm-qualifier {
+  color: green;
+}
+.cm-s-default span.cm-property {
+  color: #9bd174;
+}
+.cm-s-default span.cm-builtin {
+  color: green;
+}
+.cm-s-default span.cm-variable-3,
+.cm-s-default span.cm-type {
+  color: orange;
+}
+
+.cm-s-default .CodeMirror-activeline-background {
+  background: rgba(255, 255, 255, 0.1);
+}
+.cm-s-default .CodeMirror-matchingbracket {
+  text-decoration: underline;
+  color: white !important;
+}
+
+#right-sidebar pre.CodeMirror-line {
+  background: transparent;
+}
+
