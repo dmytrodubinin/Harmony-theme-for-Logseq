@@ -119,7 +119,7 @@ html[data-theme='light'] {
   color: var(--ls-link-text-color);
 }
 
-/* highlights */
+/* === Highlights === */
 mark {
   background: rgba(255, 255, 255, 0.8);
   color: var(--ls-primary-background-color);
@@ -131,7 +131,14 @@ mark {
   background: rgba(0, 0, 0, 0.5);
 }
 
-/* checkbox */
+/* fix color page-reference when mark text */
+mark .page-ref, .page-reference .bracket {
+  color: var(--ls-primary-background-color);
+  font-weight: bold;
+}
+
+
+/* === Checkbox === */
 .form-checkbox {
   background-color: var(--ls-primary-background-color);
 }
