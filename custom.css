@@ -132,7 +132,7 @@ mark {
 }
 
 /* fix color page-reference when mark text */
-mark .page-ref, .page-reference .bracket {
+mark .page-ref, mark .page-reference .bracket {
   color: var(--ls-primary-background-color);
   font-weight: bold;
 }
@@ -412,4 +412,5 @@ a.tag[data-ref]:hover {
 #right-sidebar pre.CodeMirror-line {
   background: transparent;
 }
+
 
