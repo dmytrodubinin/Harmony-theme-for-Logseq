@@ -107,6 +107,12 @@ html[data-theme='light'] {
   border-bottom-color: var(--ls-primary-text-color);
 }
 
+/* block references link count mark */
+a.open-block-ref-link {
+  color: var(--ls-primary-background-color);
+  background-color: var(--ls-link-text-color);
+}
+
 /* bold font */
 .dark-theme b,
 .dark-theme strong {
@@ -412,5 +418,6 @@ a.tag[data-ref]:hover {
 #right-sidebar pre.CodeMirror-line {
   background: transparent;
 }
+
 
 
