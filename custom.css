@@ -43,9 +43,9 @@ html[data-theme='dark'] {
   --ls-page-inline-code-color: var(--ls-primary-text-color);
   --ls-page-inline-code-bg-color: rgba(255, 255, 255, 0.2);
   --ls-page-title-size: 2rem;
-  --ls-scrollbar-foreground-color: rgba(255, 255, 255, 0.075);
+  --ls-scrollbar-foreground-color: rgba(255, 255, 255, 0.15);
   --ls-scrollbar-background-color: var(--ls-primary-background-color);
-  --ls-scrollbar-thumb-hover-color: rgba(255, 255, 255, 0.2);
+  --ls-scrollbar-thumb-hover-color: rgba(255, 255, 255, 0.3);
   --ls-head-text-color: var(--ls-link-text-color);
   --ls-icon-color: var(--ls-link-text-color);
   --ls-search-icon-color: var(--ls-link-text-color);
@@ -418,6 +418,7 @@ a.tag[data-ref]:hover {
 #right-sidebar pre.CodeMirror-line {
   background: transparent;
 }
+
 
 
 
