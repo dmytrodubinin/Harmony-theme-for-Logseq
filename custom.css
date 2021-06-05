@@ -212,7 +212,7 @@ mark .page-ref, mark .page-reference .bracket {
   transition: transform 0.25s ease;
 }
 .resize.image-resize:hover {
-  transition-delay: 1s;
+  transition-delay: 2s;
   transform: scale(2);
   z-index: 2;
 }
