@@ -76,6 +76,7 @@ html[data-theme='light'] {
   --ls-icon-color: var(--ls-link-text-color);
   --ls-search-icon-color: var(--ls-link-text-color);
   --ls-a-chosen-bg: var(--ls-secondary-background-color);
+  --ls-selection-background-color: rgba(0, 0, 0, 0.1);
 
 }
 
@@ -317,3 +318,16 @@ a.tag[data-ref]:hover {
   background: var(--ls-secondary-background-color);
 }
 
+.cm-s-solarized.cm-s-dark div.CodeMirror-selected {
+    background: var(--ls-selection-background-color);
+}
+.cm-s-solarized.cm-s-light div.CodeMirror-selected {
+    background: var(--ls-selection-background-color);
+}
+
+.CodeMirror-selected {
+    background: var(--ls-selection-background-color);
+}
+.CodeMirror-focused .CodeMirror-selected {
+    background: var(--ls-selection-background-color);
+}
