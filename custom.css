@@ -278,6 +278,12 @@ a.tag[data-ref]:hover {
   padding: 2px 5px !important;
 }
 
+ /* === Code Calc result position fix === */
+.extensions__code-calc {
+    top: 11px;
+    padding: 0 0.75em;
+}
+
 /* === CodeMirror === */
 .CodeMirror {
   font-family: 'Fira Code', monospace;
