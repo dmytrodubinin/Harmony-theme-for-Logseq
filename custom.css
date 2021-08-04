@@ -14,7 +14,8 @@ html[data-theme='dark'] {
   --ls-table-tr-even-background-color: rgba(255, 255, 255, 0.05);
   --ls-active-primary-color: #8ec2c2;
   --ls-active-secondary-color: #eeffff;
-  --ls-block-properties-background-color: var(--ls-primary-background-color);
+  --ls-page-properties-background-color: var(--ls-secondary-background-color);
+  --ls-block-properties-background-color: var(--ls-secondary-background-color);
   --ls-block-ref-link-text-color: var(--ls-link-text-color);
   --ls-search-background-color: var(--ls-secondary-background-color);
   --ls-border-color: var(--ls-primary-text-color);
@@ -63,7 +64,8 @@ html[data-theme='light'] {
   --ls-tertiary-background-color: rgba(237, 237, 237, .9);
   --ls-page-title-size: 2rem;
   --ls-title-text-color: var(--ls-primary-text-color);
-  --ls-block-properties-background-color: var(--ls-primary-background-color);
+  --ls-page-properties-background-color: var(--ls-secondary-background-color);
+  --ls-block-properties-background-color: var(--ls-secondary-background-color);
   --ls-block-ref-link-text-color: var(--ls-link-text-color);
   --ls-search-background-color: var(--ls-secondary-background-color);
   --ls-page-inline-code-color: var(--ls-primary-text-color);
