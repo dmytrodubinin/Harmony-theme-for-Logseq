@@ -205,21 +205,6 @@ mark .page-ref, mark .page-reference .bracket {
   color: rgba(0, 0, 0, 0.5);
 }
 
-/* === Zoom Image on hover === */
-.block-content img {
-  max-width: 100%;
-  cursor: default;
-}
-
-.resize.image-resize {
-  transition: transform 0.25s ease;
-}
-.resize.image-resize:hover {
-  transition-delay: 2s;
-  transform: scale(2);
-  z-index: 2;
-}
-
 /* === Filters === */
 .filters button:focus {
   outline: none;
