@@ -6,7 +6,6 @@ Minimalistic custom dark and white themes keeping the classic approach of the st
 - modern design with pleasing to the eyes
 - beautiful minimalistic tags with simple animations
 - internal and external links are more distinguishable 
-- increase image size on hover
 - custom code blocks style
 - and many more...
 
