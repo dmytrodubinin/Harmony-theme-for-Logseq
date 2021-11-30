@@ -9,8 +9,8 @@
 html[data-theme='dark'] {
   --ls-primary-background-color: #21232b;
   --ls-secondary-background-color: #282a33;
-  --ls-tertiary-background-color: rgba(40, 42, 51, .95);
-  --ls-quaternary-background-color: rgba(255, 255, 255, 0.04);
+  --ls-tertiary-background-color: rgba(40, 42, 51, 0.95);
+  --ls-quaternary-background-color: rgb(40, 42, 51, 0.75);
   --ls-table-tr-even-background-color: rgba(255, 255, 255, 0.05);
   --ls-active-primary-color: #8ec2c2;
   --ls-active-secondary-color: #eeffff;
@@ -61,7 +61,8 @@ html[data-theme='dark'] {
 html[data-theme='light'] {
   --ls-primary-background-color: #fafafa;
   --ls-secondary-background-color: #ededed;
-  --ls-tertiary-background-color: rgba(237, 237, 237, .9);
+  --ls-tertiary-background-color: rgba(237, 237, 237, 0.9);
+  --ls-quaternary-background-color: rgba(237, 237, 237, 0.75);
   --ls-page-title-size: 2rem;
   --ls-title-text-color: var(--ls-primary-text-color);
   --ls-page-properties-background-color: var(--ls-secondary-background-color);
