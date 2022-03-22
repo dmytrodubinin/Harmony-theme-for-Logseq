@@ -310,6 +310,8 @@ a.tag[data-ref]:hover {
 
 .extensions__code-lang {
   background: var(--ls-secondary-background-color);
+  right: 5px;
+  top: 25px;
 }
 
 .cm-s-solarized.cm-s-dark div.CodeMirror-selected {
