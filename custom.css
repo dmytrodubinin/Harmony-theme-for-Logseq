@@ -267,6 +267,12 @@ a.tag[data-ref]:hover {
 }
 
  /* === Code Calc result position fix === */
+ 
+ /* change top padding in code block */
+ .mt-6 {
+    margin-top: 0;
+ }
+ 
 .extensions__code-calc {
     top: 11px;
     padding: 0 0.75em;
@@ -310,8 +316,6 @@ a.tag[data-ref]:hover {
 
 .extensions__code-lang {
   background: var(--ls-secondary-background-color);
-  right: 5px;
-  top: 25px;
 }
 
 .cm-s-solarized.cm-s-dark div.CodeMirror-selected {
