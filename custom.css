@@ -80,10 +80,9 @@ html[data-theme='light'] {
   --ls-search-icon-color: var(--ls-link-text-color);
   --ls-a-chosen-bg: var(--ls-secondary-background-color);
   --ls-selection-background-color: rgba(0, 0, 0, 0.1);
-
 }
 
-/* === Custom colors in buttons, hints etc ===  */
+margin-top: 0;
 
 /* submit button in calendar etc */
 .dark-theme .bg-indigo-600 {
@@ -143,11 +142,11 @@ mark {
 }
 
 /* fix color page-reference when mark text */
-mark .page-ref, mark .page-reference .bracket {
+mark .page-ref,
+mark .page-reference .bracket {
   color: var(--ls-primary-background-color);
   font-weight: bold;
 }
-
 
 /* === Checkbox === */
 .form-checkbox {
@@ -266,16 +265,11 @@ a.tag[data-ref]:hover {
   padding: 2px 5px !important;
 }
 
- /* === Code Calc result position fix === */
- 
- /* change top padding in code block */
- .mt-6 {
-    margin-top: 0;
- }
- 
+/* === Code Calc result position fix === */
+
 .extensions__code-calc {
-    top: 11px;
-    padding: 0 0.75em;
+  top: 11px;
+  padding: 0 0.75em;
 }
 
 /* === CodeMirror === */
@@ -289,29 +283,30 @@ a.tag[data-ref]:hover {
   cursor: default;
 }
 
-.cm-s-solarized.cm-s-dark, .cm-s-solarized.cm-s-white {
-    color: var(--ls-primary-text-color);
-    background-color: var(--ls-primary-background-color);
-    border: 7px solid var(--ls-secondary-background-color);
-    text-shadow: none;
+.cm-s-solarized.cm-s-dark,
+.cm-s-solarized.cm-s-white {
+  color: var(--ls-primary-text-color);
+  background-color: var(--ls-primary-background-color);
+  border: 7px solid var(--ls-secondary-background-color);
+  text-shadow: none;
 }
 .CodeMirror-gutters {
   background-color: #f7f7f7;
 }
 .cm-s-solarized.cm-s-dark .CodeMirror-gutters {
-    background-color: rgba(40, 42, 51, .5);
+  background-color: rgba(40, 42, 51, 0.5);
 }
 
 .CodeMirror-linenumber {
-    color: var(--ls-primary-text-color);
-    opacity: .5;
-    text-shadow: none;
+  color: var(--ls-primary-text-color);
+  opacity: 0.5;
+  text-shadow: none;
 }
 
 .cm-s-solarized.cm-s-dark .CodeMirror-linenumber {
-    color: var(--ls-primary-text-color);
-    opacity: .5;
-    text-shadow: none;
+  color: var(--ls-primary-text-color);
+  opacity: 0.5;
+  text-shadow: none;
 }
 
 .extensions__code-lang {
@@ -319,15 +314,32 @@ a.tag[data-ref]:hover {
 }
 
 .cm-s-solarized.cm-s-dark div.CodeMirror-selected {
-    background: var(--ls-selection-background-color);
+  background: var(--ls-selection-background-color);
 }
 .cm-s-solarized.cm-s-light div.CodeMirror-selected {
-    background: var(--ls-selection-background-color);
+  background: var(--ls-selection-background-color);
 }
 
 .CodeMirror-selected {
-    background: var(--ls-selection-background-color);
+  background: var(--ls-selection-background-color);
 }
 .CodeMirror-focused .CodeMirror-selected {
-    background: var(--ls-selection-background-color);
+  background: var(--ls-selection-background-color);
+}
+
+/* change top padding in code block */
+.extensions__code > .mt-6 {
+  margin-top: 0;
+}
+
+/* === Admonitionblock: Tip, Note, etc. === */
+
+/* Decrease margins around block */
+.admonitionblock {
+  margin: 1rem 0;
+}
+
+/* Decrease padding of icon */
+.admonitionblock > .pr-4 {
+  padding-right: 0.5rem;
 }
