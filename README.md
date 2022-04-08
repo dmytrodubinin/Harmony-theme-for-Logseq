@@ -1,5 +1,9 @@
 # Harmony theme for [Logseq](https://github.com/logseq/logseq)
+
 Minimalistic custom dark and white themes keeping the classic approach of the standard Logseq theme.
+
+![](https://github.com/dmytrodubinin/Harmony-theme-for-Logseq/blob/main/logo.png)
+
 
 ## Features
 
@@ -10,7 +14,7 @@ Minimalistic custom dark and white themes keeping the classic approach of the st
 - and many more...
 
 ![Dark Theme](harmony-demo-black.png)
-![Dark Theme](harmony-demo-white.png)
+![White Theme](harmony-demo-white.png)
 
 ## Installation
 
