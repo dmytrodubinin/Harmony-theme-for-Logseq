@@ -1,0 +1,17 @@
+{
+  "name": "logseq-harmony-theme",
+  "version": "1.0.0",
+  "author": "dmytrodubinin",
+  "description": "Minimalistic custom dark and white themes keeping the classic approach of the standard Logseq theme.",
+  "main": "./custom.css",
+  "logseq": {
+    "icon": "./logo.png",
+    "themes": [
+      {
+        "name": "Harmony Theme",
+        "url": "./custom.css",
+        "description": "Minimalistic custom dark and white themes keeping the classic approach of the standard Logseq theme."
+      }
+    ]
+  }
+}
