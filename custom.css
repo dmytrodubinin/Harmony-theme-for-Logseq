@@ -80,6 +80,7 @@ html[data-theme='light'] {
   --ls-search-icon-color: var(--ls-link-text-color);
   --ls-a-chosen-bg: var(--ls-secondary-background-color);
   --ls-selection-background-color: rgba(0, 0, 0, 0.1);
+  --ls-block-highlight-color: rgba(0, 0, 0, 0.05);
 }
 
 /* submit button in calendar etc */
