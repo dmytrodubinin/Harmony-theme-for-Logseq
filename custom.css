@@ -82,10 +82,8 @@ html[data-theme='light'] {
   --ls-selection-background-color: rgba(0, 0, 0, 0.1);
 }
 
-margin-top: 0;
-
 /* submit button in calendar etc */
-.dark-theme .bg-indigo-600 {
+.bg-indigo-600 {
   background-color: var(--ls-link-text-color);
   color: var(--ls-primary-background-color);
 }
