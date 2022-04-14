@@ -16,7 +16,12 @@ Minimalistic custom dark and white themes keeping the classic approach of the st
 ![Dark Theme](harmony-demo-black.png)
 ![White Theme](harmony-demo-white.png)
 
-## Installation
+## Installation (marketplace)
+
+1. Open Plugins menu and open Marketplace
+2. In Themes tabs search Harmony theme
+
+## Installation (local)
 
 1. Download `custom.css` file
 2. Find file `custom.css` in your Logseq repo (in `logseq` folder) and replace with downloaded file
