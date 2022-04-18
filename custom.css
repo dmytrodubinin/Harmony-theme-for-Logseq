@@ -312,6 +312,10 @@ a.tag[data-ref]:hover {
   background: var(--ls-secondary-background-color);
 }
 
+.extensions__code .code-editor{
+  margin-top: 0;
+}
+
 .cm-s-solarized.cm-s-dark div.CodeMirror-selected {
   background: var(--ls-selection-background-color);
 }
@@ -324,11 +328,6 @@ a.tag[data-ref]:hover {
 }
 .CodeMirror-focused .CodeMirror-selected {
   background: var(--ls-selection-background-color);
-}
-
-/* change top padding in code block */
-.extensions__code > .mt-6 {
-  margin-top: 0;
 }
 
 /* === Admonitionblock: Tip, Note, etc. === */
