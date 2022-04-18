@@ -283,7 +283,7 @@ a.tag[data-ref]:hover {
 }
 
 .cm-s-solarized.cm-s-dark,
-.cm-s-solarized.cm-s-white {
+.cm-s-solarized.cm-s-light {
   color: var(--ls-primary-text-color);
   background-color: var(--ls-primary-background-color);
   border: 7px solid var(--ls-secondary-background-color);
@@ -294,6 +294,9 @@ a.tag[data-ref]:hover {
 }
 .cm-s-solarized.cm-s-dark .CodeMirror-gutters {
   background-color: rgba(40, 42, 51, 0.5);
+}
+.cm-s-solarized.cm-s-light .CodeMirror-gutters {
+  background-color: rgba(237, 237, 237, 0.5);
 }
 
 .CodeMirror-linenumber {
