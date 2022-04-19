@@ -150,6 +150,7 @@ mark .page-reference .bracket {
 /* === Checkbox === */
 .form-checkbox {
   background-color: var(--ls-primary-background-color);
+  border: 1px solid rgba(255, 255, 255, 0.5);
 }
 .dark-theme .form-checkbox {
   border: 1px solid rgba(255, 255, 255, 0.5);
@@ -158,6 +159,10 @@ mark .page-reference .bracket {
   border: 1px solid rgba(0, 0, 0, 0.5);
 }
 
+.form-checkbox:checked {
+  border-color: rgba(255, 255, 255, 0.5);
+  background-color: var(--ls-primary-background-color);
+}
 .dark-theme .form-checkbox:checked {
   border-color: rgba(255, 255, 255, 0.5);
   background-color: var(--ls-primary-background-color);
@@ -315,7 +320,7 @@ a.tag[data-ref]:hover {
   background: var(--ls-secondary-background-color);
 }
 
-.extensions__code .code-editor{
+.extensions__code .code-editor {
   margin-top: 0;
 }
 
