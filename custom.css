@@ -147,6 +147,11 @@ mark .page-reference .bracket {
   font-weight: bold;
 }
 
+/* === Menu Links === */
+a.menu-link.chosen {
+  background-color: var(--ls-selection-background-color);
+}
+
 /* === Checkbox === */
 .form-checkbox {
   background-color: var(--ls-primary-background-color);
