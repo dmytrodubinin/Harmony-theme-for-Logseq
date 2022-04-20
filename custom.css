@@ -309,6 +309,10 @@ a.tag[data-ref]:hover {
   background-color: rgba(237, 237, 237, 0.5);
 }
 
+.CodeMirror pre.CodeMirror-line {
+  line-height: 18px;
+}
+
 .CodeMirror-linenumber {
   color: var(--ls-primary-text-color);
   opacity: 0.5;
