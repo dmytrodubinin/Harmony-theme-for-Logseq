@@ -83,6 +83,11 @@ html[data-theme='light'] {
   --ls-block-highlight-color: rgba(0, 0, 0, 0.05);
 }
 
+/* Heading */
+.ls-block h5 {
+  font-size: 1em;
+}
+
 /* submit button in calendar etc */
 .bg-indigo-600 {
   background-color: var(--ls-link-text-color);
@@ -363,5 +368,25 @@ a.tag[data-ref]:hover {
 @media screen and (max-width: 480px) {
   h1.title {
     font-size: 24px;
+  }
+  .ls-block h1 {
+    font-size: 1.5em;
+    min-height: 1.5em;
+  }
+  .ls-block h2 {
+    font-size: 1.17em;
+    min-height: 1.17em;
+  }
+  .ls-block h3 {
+    font-size: 1.12em;
+    min-height: 1.12em;
+  }
+  .ls-block h4 {
+    font-size: 1.05em;
+    min-height: 1.05em;
+  }
+  .ls-block h5 {
+    font-size: 1em;
+    min-height: 1em;
   }
 }
