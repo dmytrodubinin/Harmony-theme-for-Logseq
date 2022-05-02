@@ -364,6 +364,13 @@ a.tag[data-ref]:hover {
   padding-right: 0.5rem;
 }
 
+/* === Embed block === */
+
+/* center text */
+.color-level.embed-block.bg-base-2 > .px-3.pt-1.pb-2 {
+  padding: 0.25rem;
+}
+
 /* === Mobile Devices === */
 @media screen and (max-width: 480px) {
   h1.title {
