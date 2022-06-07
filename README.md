@@ -1,3 +1,9 @@
+![ukraine](https://github.githubassets.com/images/icons/emoji/unicode/1f1fa-1f1e6.png) UKRAINE [IS BEING ATTACKED](https://twitter.com/MFA_Ukraine) BY RUSSIAN ARMY. CIVILIANS ARE GETTING KILLED. RESIDENTIAL AREAS ARE GETTING BOMBED.
+
+-   Help Ukraine via [National Bank of Ukraine](https://bank.gov.ua/en/news/all/natsionalniy-bank-vidkriv-spetsrahunok-dlya-zboru-koshtiv-na-potrebi-armiyi)
+-   Help Ukraine via [SaveLife](https://savelife.in.ua/en/donate/) fund
+-   More info on [war.ukraine.ua](https://war.ukraine.ua/)
+
 # Harmony theme for [Logseq](https://github.com/logseq/logseq)
 
 Minimalistic custom dark and white themes keeping the classic approach of the standard Logseq theme.
