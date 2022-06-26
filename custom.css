@@ -3,6 +3,14 @@
 
 :root {
   --ls-font-family: 'Roboto', sans-serif;
+  --verse: 185, 100%;
+  --warn: 46, 74%;
+  --important: 338, 80%;
+  --tip: 209, 87%;
+  --note: 210, 9%;
+  --caution: 376, 100%;
+  --pinned: 224, 88%;
+  --example: 213, 20%;
 }
 
 .dark-theme,
@@ -302,6 +310,7 @@ a.tag[data-ref]:hover {
   color: var(--ls-primary-text-color);
   background-color: var(--ls-primary-background-color);
   border: 7px solid var(--ls-secondary-background-color);
+  border-radius: 5px;
   text-shadow: none;
 }
 .CodeMirror-gutters {
@@ -355,13 +364,138 @@ a.tag[data-ref]:hover {
 /* === Admonitionblock: Tip, Note, etc. === */
 
 /* Decrease margins around block */
-.admonitionblock {
-  margin: 1rem 0;
-}
+/*.admonitionblock {*/
+/*margin: 1rem 0;*/
+/*}*/
 
 /* Decrease padding of icon */
+.admonition-icon {
+  border: transparent;
+}
+.admonition-icon > svg {
+  background-color: transparent !important;
+}
+
+.svg-shadow.note,
+.svg-shadow.tip,
+.svg-shadow.important,
+.svg-shadow.note,
+.svg-shadow.caution,
+.svg-shadow.pinned,
+.svg-shadow.warning {
+  filter: none;
+}
+
 .admonitionblock > .pr-4 {
   padding-right: 0.5rem;
+}
+
+.admonitionblock,
+.verse,
+pre.pre-wrap-white-space {
+  border: 1px solid transparent;
+  border-radius: 5px;
+  padding: 1.5rem 1.5rem;
+}
+
+/*quote*/
+blockquote {
+  border-radius: 5px;
+  padding: 1.5rem 1.5rem;
+  margin: 1rem 0;
+}
+html[data-theme='light'] blockquote {
+  background-color: hsl(var(--note), 86%, 0.3);
+}
+
+/*note*/
+html[data-theme='light'] .note,
+html[data-theme='light'] .admonitionblock.note {
+  background-color: hsl(var(--note), 86%, 0.3);
+  border-color: hsl(var(--note), 86%, 0.1);
+}
+html[data-theme='dark'] .note,
+html[data-theme='dark'] .admonitionblock.note {
+  background-color: hsl(var(--note), 86%, 0.05);
+  border-color: hsl(var(--note), 86%, 0.05);
+}
+
+/*tip*/
+html[data-theme='light'] .admonitionblock.tip {
+  background-color: hsl(var(--tip), 73%, 0.1);
+  border-color: hsl(var(--tip), 73%, 0.08);
+}
+html[data-theme='dark'] .admonitionblock.tip {
+  background-color: hsl(var(--tip), 73%, 0.05);
+  border-color: hsl(var(--tip), 73%, 0.05);
+  color: hsl(var(--tip), 73%, 0.5);
+}
+html[data-theme='dark'] .admonitionblock.tip .is-paragraph {
+  color: var(--ls-primary-text-color);
+}
+
+/*important*/
+html[data-theme='light'] .important,
+html[data-theme='light'] .admonitionblock.important {
+  background-color: hsl(var(--important), 80%, 0.1);
+  border-color: hsl(var(--important), 80%, 0.06);
+}
+html[data-theme='dark'] .important,
+html[data-theme='dark'] .admonitionblock.important {
+  background-color: hsl(var(--important), 80%, 0.05);
+  border-color: hsl(var(--important), 80%, 0.05);
+  color: hsl(var(--important), 74%, 0.5);
+}
+html[data-theme='dark'] .admonitionblock.important .is-paragraph {
+  color: var(--ls-primary-text-color);
+}
+
+/*caution*/
+html[data-theme='light'] .caution,
+html[data-theme='light'] .admonitionblock.caution {
+  background-color: hsl(var(--caution), 84%, 0.1);
+  border-color: hsl(var(--caution), 84%, 0.1);
+}
+html[data-theme='dark'] .caution,
+html[data-theme='dark'] .admonitionblock.caution {
+  background-color: hsl(var(--caution), 84%, 0.05);
+  border-color: hsl(var(--caution), 84%, 0.05);
+  color: hsl(var(--caution), 84%, 0.5);
+}
+html[data-theme='dark'] .admonitionblock.caution .is-paragraph {
+  color: var(--ls-primary-text-color);
+}
+
+/*pinned*/
+html[data-theme='light'] .pinned,
+html[data-theme='light'] .admonitionblock.pinned {
+  background-color: hsl(var(--pinned), 80%, 0.1);
+  border-color: hsl(var(--pinned), 80%, 0.1);
+}
+html[data-theme='dark'] .pinned,
+html[data-theme='dark'] .admonitionblock.pinned {
+  background-color: hsl(var(--pinned), 80%, 0.05);
+  border-color: hsl(var(--pinned), 80%, 0.05);
+  color: hsl(var(--pinned), 80%, 0.5);
+}
+html[data-theme='dark'] .admonitionblock.pinned .is-paragraph {
+  color: var(--ls-primary-text-color);
+}
+
+/*warning*/
+html[data-theme='light'] .warning,
+html[data-theme='light'] .admonitionblock.warning {
+  background-color: hsl(var(--warn), 82%, 0.15);
+  border-color: hsl(var(--warn), 82%, 0.1);
+}
+html[data-theme='dark'] .warning,
+html[data-theme='dark'] .admonitionblock.warning {
+  background-color: hsl(var(--warn), 82%, 0.05);
+  border-color: hsl(var(--warn), 82%, 0.05);
+  color: hsl(var(--warn), 82%, 0.5);
+}
+html[data-theme='dark'] .admonitionblock.warning .is-paragraph {
+  color: var(--ls-primary-text-color);
 }
 
 /* === Embed block === */
