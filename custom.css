@@ -364,9 +364,9 @@ a.tag[data-ref]:hover {
 /* === Admonitionblock: Tip, Note, etc. === */
 
 /* Decrease margins around block */
-/*.admonitionblock {*/
-/*margin: 1rem 0;*/
-/*}*/
+.admonitionblock {
+  margin: 0.5rem 0;
+}
 
 /* Decrease padding of icon */
 .admonition-icon {
@@ -402,7 +402,7 @@ pre.pre-wrap-white-space {
 blockquote {
   border-radius: 5px;
   padding: 1.5rem 1.5rem;
-  margin: 1rem 0;
+  margin: 0.5rem 0;
 }
 html[data-theme='light'] blockquote {
   background-color: hsl(var(--note), 86%, 0.3);
