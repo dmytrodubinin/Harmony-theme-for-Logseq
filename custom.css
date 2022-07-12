@@ -23,7 +23,7 @@ html[data-theme='dark'] {
   --ls-active-primary-color: #8ec2c2;
   --ls-active-secondary-color: #eeffff;
   --ls-page-properties-background-color: var(--ls-secondary-background-color);
-  --ls-block-properties-background-color: var(--ls-secondary-background-color);
+  --ls-block-properties-background-color: var(--ls-primary-background-color);
   --ls-block-ref-link-text-color: var(--ls-link-text-color);
   --ls-search-background-color: var(--ls-secondary-background-color);
   --ls-border-color: var(--ls-primary-text-color);
