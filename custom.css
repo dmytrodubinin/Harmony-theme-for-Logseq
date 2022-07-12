@@ -167,6 +167,7 @@ a.menu-link.chosen {
 
 /* === Checkbox === */
 .form-checkbox {
+  top: 0;
   background-color: var(--ls-primary-background-color);
   border: 1px solid rgba(255, 255, 255, 0.5);
 }
