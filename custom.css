@@ -286,6 +286,7 @@ a.tag[data-ref]:hover {
 /* === Inline code === */
 :not(pre) > code {
   padding: 2px 5px !important;
+  background-color: var(--ls-page-inline-code-bg-color);
 }
 
 /* === Code Calc result position fix === */
