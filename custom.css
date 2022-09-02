@@ -96,6 +96,11 @@ html[data-theme='light'] {
   outline-color: transparent;
 }
 
+/* Command Palette */
+.cp__palette-main .chosen {
+  background: transparent;
+}
+
 /* Heading */
 .ls-block h5 {
   font-size: 1em;
