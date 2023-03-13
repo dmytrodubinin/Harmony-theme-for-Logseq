@@ -353,6 +353,7 @@ a.tag[data-ref]:hover {
 
 .extensions__code-lang {
   background: var(--ls-secondary-background-color);
+  border: none;
 }
 
 .extensions__code .code-editor {
