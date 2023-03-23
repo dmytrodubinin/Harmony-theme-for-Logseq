@@ -20,7 +20,7 @@ html[data-theme="dark"] {
   --ls-tertiary-background-color: rgba(40, 42, 51, 0.95);
   --ls-quaternary-background-color: rgb(40, 42, 51, 0.75);
   --ls-table-tr-even-background-color: rgba(255, 255, 255, 0.05);
-  --ls-active-primary-color: #8ec2c2;
+  --ls-active-primary-color: var(--ls-secondary-background-color);
   --ls-active-secondary-color: #eeffff;
   --ls-page-properties-background-color: var(--ls-secondary-background-color);
   --ls-block-properties-background-color: var(--ls-primary-background-color);
