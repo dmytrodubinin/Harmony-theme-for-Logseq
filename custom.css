@@ -310,7 +310,7 @@ a.tag[data-ref]:hover {
 .CodeMirror {
   font-family: "Fira Code", monospace;
   line-height: 1.2;
-  background: var(--ls-secondary-background-color);
+  background: var(--ls-secondary-background-color) !important;
 }
 
 .CodeMirror-hscrollbar {
@@ -326,7 +326,7 @@ a.tag[data-ref]:hover {
   text-shadow: none;
 }
 .CodeMirror-gutters {
-  background-color: #f7f7f7;
+  background-color: var(--ls-secondary-background-color) !important;
 }
 .cm-s-solarized.cm-s-dark .CodeMirror-gutters {
   background-color: rgba(40, 42, 51, 0.5);
@@ -420,6 +420,7 @@ blockquote {
   border-radius: 5px;
   padding: 1.5rem 1.5rem;
   margin: 0.5rem 0;
+  border-color: var(--ls-page-blockquote-border-color);
 }
 html[data-theme="light"] blockquote {
   background-color: hsl(var(--note), 86%, 0.3);
